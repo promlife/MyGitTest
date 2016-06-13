@@ -13,9 +13,12 @@
 		5EDB0C1C1D0D100200554623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDB0C1A1D0D100200554623 /* Main.storyboard */; };
 		5EDB0C1E1D0D100200554623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDB0C1D1D0D100200554623 /* Assets.xcassets */; };
 		5EDB0C211D0D100200554623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDB0C1F1D0D100200554623 /* LaunchScreen.storyboard */; };
+		C6A706FDD800DC857100DB55 /* libPods-彼岸TS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 088054EE395EED368BB67F3E /* libPods-彼岸TS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003BBE5FCFE3C75E807D83BC /* Pods-彼岸TS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-彼岸TS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-彼岸TS/Pods-彼岸TS.debug.xcconfig"; sourceTree = "<group>"; };
+		088054EE395EED368BB67F3E /* libPods-彼岸TS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-彼岸TS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDB0C0E1D0D100100554623 /* 彼岸TS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彼岸TS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDB0C121D0D100200554623 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5EDB0C141D0D100200554623 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,8 @@
 		5EDB0C1D1D0D100200554623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EDB0C201D0D100200554623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EDB0C221D0D100200554623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EDB0C281D0D519400554623 /* BTS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTS.pch; sourceTree = "<group>"; };
+		C30DBBB88E63A0AC9222453E /* Pods-彼岸TS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-彼岸TS.release.xcconfig"; path = "Pods/Target Support Files/Pods-彼岸TS/Pods-彼岸TS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A706FDD800DC857100DB55 /* libPods-彼岸TS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 			children = (
 				5EDB0C101D0D100200554623 /* 彼岸TS */,
 				5EDB0C0F1D0D100100554623 /* Products */,
+				C900C5C09F3F174D3F05E20D /* Pods */,
+				B5BA4C10F8A601CF3B0DE2D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +83,26 @@
 			isa = PBXGroup;
 			children = (
 				5EDB0C121D0D100200554623 /* main.m */,
+				5EDB0C281D0D519400554623 /* BTS.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5BA4C10F8A601CF3B0DE2D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				088054EE395EED368BB67F3E /* libPods-彼岸TS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C900C5C09F3F174D3F05E20D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				003BBE5FCFE3C75E807D83BC /* Pods-彼岸TS.debug.xcconfig */,
+				C30DBBB88E63A0AC9222453E /* Pods-彼岸TS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EDB0C251D0D100200554623 /* Build configuration list for PBXNativeTarget "彼岸TS" */;
 			buildPhases = (
+				C1870EA30070EE9F8450C69B /* [CP] Check Pods Manifest.lock */,
 				5EDB0C0A1D0D100100554623 /* Sources */,
 				5EDB0C0B1D0D100100554623 /* Frameworks */,
 				5EDB0C0C1D0D100100554623 /* Resources */,
+				CA94D97977D343406AF06C5A /* [CP] Embed Pods Frameworks */,
+				766F36F51DDC4594394AE26F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		766F36F51DDC4594394AE26F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-彼岸TS/Pods-彼岸TS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1870EA30070EE9F8450C69B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA94D97977D343406AF06C5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-彼岸TS/Pods-彼岸TS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5EDB0C0A1D0D100100554623 /* Sources */ = {
@@ -263,22 +340,28 @@
 		};
 		5EDB0C261D0D100200554623 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 003BBE5FCFE3C75E807D83BC /* Pods-彼岸TS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT)/BTS.pch";
 				INFOPLIST_FILE = "彼岸TS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ifeng.--TS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifeng.BTS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		5EDB0C271D0D100200554623 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C30DBBB88E63A0AC9222453E /* Pods-彼岸TS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT)/BTS.pch";
 				INFOPLIST_FILE = "彼岸TS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ifeng.--TS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifeng.BTS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -302,6 +385,7 @@
 				5EDB0C271D0D100200554623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
