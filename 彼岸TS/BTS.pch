@@ -1,0 +1,15 @@
+//
+//  BTS.pch
+//  彼岸TS
+//
+//  Created by ifeng on 16/6/12.
+//  Copyright © 2016年 PF. All rights reserved.
+//
+
+#ifndef BTS_pch
+#define BTS_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* BTS_pch */
